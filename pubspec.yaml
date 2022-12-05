@@ -31,6 +31,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  # Internationalization support
   flutter_localizations:
     sdk: flutter
   intl: ^0.17.0-nullsafety.2
@@ -56,6 +57,7 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
+  # Adds code generation (synthetic package) support
   generate: true
 
   # The following line ensures that the Material Icons font is
