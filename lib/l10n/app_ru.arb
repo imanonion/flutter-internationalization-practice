@@ -1,11 +1,8 @@
 {
-  "helloWorld": "GeeksforGeeks",
-  "displayText": "This is a sample App",
-  "@helloWorld": {
-    "description": "SampleApp for GeeksforGeeks"
-  },
+  "helloWorld": "Всем привет",
+  "displayText":"Это пример приложения",
   "metric": "litres",
-  "helloWorldOn": "Hello World on {date}",
+  "helloWorldOn": "Всем привет on {date}",
   "@helloWorldOn": {
     "description": "A message with a date parameter",
     "placeholders": {

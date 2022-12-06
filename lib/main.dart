@@ -51,6 +51,18 @@ class _MyHomePageState extends State<MyHomePage> {
             Text(
               AppLocalizations.of(context)!.displayText,
               style: const TextStyle(color: Colors.amber),
+            ),
+            const Divider(),
+            Text(
+              AppLocalizations.of(context)!.metric,
+              style: const TextStyle(backgroundColor: Colors.blue),
+            ),
+            const Divider(),
+            Text(
+              AppLocalizations.of(context)!.helloWorldOn(DateTime.now())
+            ),
+            TextField(
+              
             )
             // const Text(
             //   'You have pushed the button this many times:',

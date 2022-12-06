@@ -1,4 +1,15 @@
 {
-  "helloWorld": "गीक्स फॉर गीक्स ",
-  "displayText":"यह एक सैंपल ऐप है"
+  "helloWorld": "गीक्स फॉर गीक्स",
+  "displayText": "यह एक सैंपल ऐप है",
+  "metric": "gallons",
+  "helloWorldOn": "Hello World on {date}",
+  "@helloWorldOn": {
+    "description": "A message with a date parameter",
+    "placeholders": {
+      "date": {
+        "type": "DateTime",
+        "format": "yMd"
+      }
+    }
+  }
 }
