@@ -1,7 +1,7 @@
 {
   "helloWorld": "Всем привет",
   "displayText":"Это пример приложения",
-  "metric": "litres",
+  "volume_unit": "litres",
   "helloWorldOn": "Всем привет on {date}",
   "@helloWorldOn": {
     "description": "A message with a date parameter",

@@ -1,5 +1,8 @@
+
+
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:units_converter/units_converter.dart';
 
 void main() {
   runApp(const MyApp());
@@ -37,6 +40,16 @@ class _MyHomePageState extends State<MyHomePage> {
   //     _counter++;
   //   });
   // }
+  double volume = 1000;
+
+  Widget internationalizedVolumeUnit(double gallons) {
+    double liters;
+    liters = gallons.convertFromTo(VOLUME.usGallons, VOLUME.liters) ?? 0.0;
+    
+    return AppLocalizations.of(context)!.volume_unit == 'gallons'
+              ? Text('${volume.toString()} gallons')
+              : Text('${liters.toString()} liters');
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -54,16 +67,15 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             const Divider(),
             Text(
-              AppLocalizations.of(context)!.metric,
+              AppLocalizations.of(context)!.volume_unit,
               style: const TextStyle(backgroundColor: Colors.blue),
             ),
             const Divider(),
             Text(
               AppLocalizations.of(context)!.helloWorldOn(DateTime.now())
             ),
-            TextField(
-              
-            )
+            internationalizedVolumeUnit(volume),
+
             // const Text(
             //   'You have pushed the button this many times:',
             // ),

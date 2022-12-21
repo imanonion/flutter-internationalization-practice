@@ -4,7 +4,7 @@
   "@helloWorld": {
     "description": "SampleApp for GeeksforGeeks"
   },
-  "metric": "litres",
+  "volume_unit": "litres",
   "helloWorldOn": "Hello World on {date}",
   "@helloWorldOn": {
     "description": "A message with a date parameter",

@@ -1,7 +1,7 @@
 {
   "helloWorld": "गीक्स फॉर गीक्स",
   "displayText": "यह एक सैंपल ऐप है",
-  "metric": "gallons",
+  "volume_unit": "gallons",
   "helloWorldOn": "Hello World on {date}",
   "@helloWorldOn": {
     "description": "A message with a date parameter",
